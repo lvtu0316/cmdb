@@ -41,7 +41,7 @@ class DeviceAbstract(models.Model):
     online_date = models.DateField(null=True, blank=True, default='', verbose_name="上架日期")
     offline_date = models.DateField(null=True, blank=True, default='', verbose_name="下架日期")
 
-    warranty_date = models.DateField(verbose_name="维保截止日期")
+    warranty_date = models.DateField(null=True, blank=True, default='', verbose_name="维保截止日期")
     remarks = models.TextField(blank=True, verbose_name="备注")
 
     class Meta:
